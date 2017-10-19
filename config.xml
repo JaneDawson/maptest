@@ -82,9 +82,9 @@
     <plugin name="cordova-plugin-device" spec="1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.11" />
-    <plugin name="cordova-plugin-googlemaps" spec="^2.0.11">
+    <engine name="android" spec="~6.2.3" />
+    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps">
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyC1a-D4mWPeB9mkQ7D-G8MchXZME7F9a_w" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyB-iWiR9o_Mopjgy2iq2YN5oz2bOqvmilM" />
     </plugin>
-    <engine name="android" spec="~6.2.3" />
 </widget>

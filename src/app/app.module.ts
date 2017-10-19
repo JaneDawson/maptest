@@ -7,11 +7,15 @@ import { GoogleMaps } from '@ionic-native/google-maps';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Page } from '../pages/page/page';
+import { Page2 } from '../pages/page2/page2';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    Page,
+    Page2
   ],
   imports: [
     BrowserModule,
@@ -20,7 +24,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    Page,
+    Page2
   ],
   providers: [
     StatusBar,
