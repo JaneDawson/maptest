@@ -10,8 +10,23 @@
 
 <ion-content padding>
 
-    <button ion-button (click)="pushPage2()">
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content pullingIcon="none"></ion-refresher-content>
+    </ion-refresher>
+
+    <!-- <button ion-button (click)="pushPage2()">
       Push Page 2
-    </button>
+    </button> -->
+
+    green position fixed div is fixed and doesn't scroll <br><br><br>
+    pull to refresh <br><br><br><br><br>
+    afterwards position fixed div is not fixed anymore <br><br><br><br>
+    - <br>
+    - <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>
+    - <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>- <br>
+
+    <div class="fixed">
+      position: fixed
+    </div>
 
 </ion-content>

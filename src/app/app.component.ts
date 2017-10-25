@@ -24,30 +24,30 @@ export class MyApp {
       splashScreen.hide();
 
       // Prevent HW Back Button from closing (exiting) App
-      platform.registerBackButtonAction(() => {
+      // platform.registerBackButtonAction(() => {
         
-        console.log("HW Back Button registered")
+      //   console.log("HW Back Button registered")
 
-        let activePortal = ionicApp._loadingPortal.getActive() ||
-          ionicApp._modalPortal.getActive() ||
-          ionicApp._toastPortal.getActive() ||
-          ionicApp._overlayPortal.getActive();
+      //   let activePortal = ionicApp._loadingPortal.getActive() ||
+      //     ionicApp._modalPortal.getActive() ||
+      //     ionicApp._toastPortal.getActive() ||
+      //     ionicApp._overlayPortal.getActive();
 
-        if (activePortal) {
-          activePortal.dismiss();
-          console.log("close Portal")
-          return;
-      }
+      //   if (activePortal) {
+      //     activePortal.dismiss();
+      //     console.log("close Portal")
+      //     return;
+      // }
 
 
-        if(this.nav.canGoBack()){
-          this.nav.pop();
-          console.log("pop Nav")
-        }else{
-          // Minimize App
-          console.log("Minimize App. Additional Plugin necessary.")
-        }
-      });
+      //   if(this.nav.canGoBack()){
+      //     this.nav.pop();
+      //     console.log("pop Nav")
+      //   }else{
+      //     // Minimize App
+      //     console.log("Minimize App. Additional Plugin necessary.")
+      //   }
+      // });
 
     });
   }

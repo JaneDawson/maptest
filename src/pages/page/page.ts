@@ -16,8 +16,15 @@ export class Page {
     console.log('ionViewDidLoad Page');
   }
 
-  pushPage2(){
-    this.navCtrl.push(Page2)
+  // pushPage2(){
+  //   this.navCtrl.push(Page2)
+  // }
+
+  doRefresh(refresher){
+      setTimeout(() => refresher.complete(), 1000);
+
+    
   }
+
 
 }
